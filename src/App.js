@@ -10,11 +10,15 @@ function App() {
 
   const routeBtn = () => {
     if (mobile) {
-      setTimeout(function () {
+      // setTimeout(function () {
+      // }, 20);
+      window.location.href = "breezeapp://"
+      if (window.location.href === "breezeapp://") {
+        console.log('Done')
+      } else {
         if (platform.toLowerCase() === 'android') window.location = android_url;
         if (platform.toLowerCase() === 'ios') window.location = ios_url;
-      }, 20);
-      window.location.href = "breezeapp://";
+      };
     }
   }
 
@@ -26,7 +30,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-       {mobile &&  <button className='btn' onClick={routeBtn}> Use mobile app </button>} 
+        {mobile && <button className='btn' onClick={routeBtn}> Use mobile app </button>}
         <a
           className="App-link"
           href="https://reactjs.org"
