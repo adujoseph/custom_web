@@ -12,7 +12,7 @@ function App() {
     if (mobile) {
       
       setTimeout(() => {
-        if (window.location.href != "breezeapp://") {
+        if (window.location.href !== "breezeapp://") {
           if (platform.toLowerCase() === 'android') window.location = android_url;
           if (platform.toLowerCase() === 'ios') window.location = ios_url;
         };
