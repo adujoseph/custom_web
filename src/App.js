@@ -18,7 +18,7 @@ function App() {
     }
   }
 
-  
+
   return (
     <div className="App">
       <header className="App-header">
@@ -26,7 +26,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <button className='btn' onClick={routeBtn}> Use mobile app </button>
+       {mobile &&  <button className='btn' onClick={routeBtn}> Use mobile app </button>} 
         <a
           className="App-link"
           href="https://reactjs.org"
