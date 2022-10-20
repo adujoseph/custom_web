@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 
-const android_url = 'https://play.google.com/store/apps/details?id=com.seamless_hrms';
-const ios_url = 'https://apps.apple.com/us/app/seamlesshrms/id1549679995'
+// const android_url = 'https://play.google.com/store/apps/details?id=com.seamless_hrms';
+// const ios_url = 'https://apps.apple.com/us/app/seamlesshrms/id1549679995'
 function App() {
   const { mobile, platform } = navigator.userAgentData
 
@@ -13,6 +13,7 @@ function App() {
       // setTimeout(function () {
       // }, 20);
       window.location.href = "breezeapp://"
+      console.log(platform)
       // if (window.location.href === "breezeapp://") {
       //   console.log(window.location.href)
       // } else {
