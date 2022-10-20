@@ -13,12 +13,12 @@ function App() {
       // setTimeout(function () {
       // }, 20);
       window.location.href = "breezeapp://"
-      if (window.location.href === "breezeapp://") {
-        console.log('Done')
-      } else {
-        if (platform.toLowerCase() === 'android') window.location = android_url;
-        if (platform.toLowerCase() === 'ios') window.location = ios_url;
-      };
+      // if (window.location.href === "breezeapp://") {
+      //   console.log(window.location.href)
+      // } else {
+      //   if (platform.toLowerCase() === 'android') window.location = android_url;
+      //   if (platform.toLowerCase() === 'ios') window.location = ios_url;
+      // };
     }
   }
 
