@@ -13,7 +13,7 @@ function App() {
       setTimeout(function () {
         if (platform.toLowerCase() === 'android') window.location = android_url;
         if (platform.toLowerCase() === 'ios') window.location = ios_url;
-      }, 100);
+      }, 20);
       window.location.href = "breezeapp://";
     }
   }
