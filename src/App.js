@@ -10,16 +10,16 @@ function App() {
 
   const routeBtn = () => {
     if (mobile) {
-      // setTimeout(function () {
-      // }, 20);
-      window.location.href = "breezeapp://"
+      
       setTimeout(() => {
-        if (window.location.href !== "breezeapp://") {
+        if (window.location.href != "breezeapp://") {
           if (platform.toLowerCase() === 'android') window.location = android_url;
           if (platform.toLowerCase() === 'ios') window.location = ios_url;
         };
-      }, 100)
+        console.log(window.location.href)
+      }, 1000)
 
+      window.location.href = "breezeapp://"
     }
   }
 
